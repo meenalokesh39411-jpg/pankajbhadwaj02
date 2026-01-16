@@ -1,0 +1,109 @@
+/* New Theme: Electric Blue, Silver, and Midnight Black */
+:root{
+  --bg-img: url('../images/background.jpg');
+  --body-bg: #050505; 
+  --card-bg-start: #111111; 
+  --card-bg-end: #000000; 
+  --accent-blue: #00d4ff; /* Vibrant Electric Blue */
+  --accent-silver: #e0e0e0; /* Clean Silver/White */
+  --text: #f0f0f0;
+  --success-color: #39ff14; 
+  --accent: var(--accent-blue);
+  --shadow-color: rgba(0, 212, 255, 0.4); 
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family: 'Poppins', sans-serif, -apple-system; 
+  background:var(--body-bg);
+  color:var(--text);
+}
+
+body{
+  background-image: linear-gradient(135deg, #050505, #1a1a1a); 
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+}
+
+.card{
+  width:100%;
+  max-width:440px; 
+  background: linear-gradient(180deg, var(--card-bg-start), var(--card-bg-end));
+  border-radius:16px;
+  padding:22px; 
+  text-align:center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.9), 0 0 15px var(--shadow-color);
+  backdrop-filter: blur(4px);
+  border: 2px solid var(--accent-blue); 
+}
+
+.avatar-wrap{display:flex;justify-content:center;margin-top:-48px}
+.avatar{
+    width:110px; 
+    height:110px; 
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid var(--accent-silver); 
+    box-shadow: 0 0 0 5px var(--card-bg-start), 0 0 20px var(--accent-blue);
+}
+
+.title{
+    font-size:24px; 
+    margin:15px 0 10px;
+    font-weight:900;
+    color: var(--accent-blue); 
+    text-shadow: 0 0 10px var(--shadow-color);
+}
+
+.features{
+    list-style:none;
+    padding:0;
+    margin:15px 0 20px;
+    color:var(--text);
+    font-size:15px; 
+    line-height:1.8;
+    text-align:center; 
+    display:block; 
+    max-width:400px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.features li{
+    margin:9px 0;
+    padding: 9px 6px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(240, 240, 240, 0.1); 
+}
+.features li:last-child {
+    border-bottom: none;
+}
+
+.cta-btn{
+  display:inline-block;
+  width:90%;
+  max-width:330px; 
+  padding:15px 19px; 
+  margin:10px 0 18px;
+  border-radius:30px;
+  text-decoration:none;
+  background: linear-gradient(90deg, #0072ff, #00d4ff); 
+  color:#ffffff; 
+  font-weight:700;
+  font-size:16px; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px var(--shadow-color), 0 10px 20px rgba(0,0,0,0.5);
+  transition: all .3s ease;
+}
+
+/* Footer Link and Text Colors - Unchanged per instructions */
+.footer-line {
+    margin-top: 10px;
+}
+.studio-link a {
+    color: inherit;
+    text-decoration: underline;
+}
